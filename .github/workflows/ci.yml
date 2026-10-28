@@ -1,0 +1,38 @@
+name: Python 3.13 Blueprint CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-blueprint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Verify FastAPI + Pydantic v2 Schema & Bcrypt 4.0.1
+        run: |
+          python -c "
+          import blueprint_demo
+          from passlib.context import CryptContext
+          pwd = CryptContext(schemes=['bcrypt'], deprecated='auto')
+          h = pwd.hash('supersecret123')
+          assert pwd.verify('supersecret123', h)
+          out = blueprint_demo.StructuredAIOutput(
+              status='success',
+              summary='Verified on Python 3.13',
+              key_points=['Pydantic v2 strict schema OK', 'Bcrypt 4.0.1 OK'],
+              action_items=['Ship to production']
+          )
+          assert out.status == 'success'
+          print('ALL CI CHECKS PASSED ON PYTHON 3.13!')
+          "
