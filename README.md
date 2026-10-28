@@ -58,7 +58,7 @@ def generate_structured_json(prompt: str, system_instruction: str) -> AIStructur
                 contents=prompt,
                 config={
                     "response_mime_type": "application/json",
-                    "system_instruction: system_instruction,
+                    "system_instruction": system_instruction,
                 },
             )
             return AIStructuredResponse(**json.loads(res.text))
