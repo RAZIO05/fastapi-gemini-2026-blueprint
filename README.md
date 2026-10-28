@@ -5,6 +5,12 @@
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-3.5%20Flash%20JSON-orange.svg)](https://yahiaoui26.gumroad.com/l/shipai-pro)
 [![ShipAI Pro](https://img.shields.io/badge/ShipAI%20v2.0-Commercial%20SaaS%20Engine-brightgreen.svg)](https://yahiaoui26.gumroad.com/l/shipai-pro/LAUNCH20)
 
+<p align="center">
+  <a href="https://yahiaoui26.gumroad.com/l/shipai-pro/LAUNCH20">
+    <img src="https://public-files.gumroad.com/00b6jvp3mssqjd59jm1ax12xa5q9" alt="ShipAI v2.0 — FastAPI + Google Gemini Commercial Micro-SaaS Engine" width="100%" />
+  </a>
+</p>
+
 > **Stop fighting unstructured LLM markdown and Python 3.13 `bcrypt` crashes.**
 > This reference blueprint shows how to wire **FastAPI**, **Pydantic v2**, and the official **`google-genai` SDK** with native `response_mime_type="application/json"` and 3-model automatic failover.
 
@@ -18,6 +24,7 @@
   * 🔑 **Live Gumroad License Key Verification API** (`/api/v1/billing/activate-license`)
   * 🎯 **5 Pre-Built Vertical Micro-SaaS Presets** (AI Startup Validator, Legal Contract Risk Auditor, OWASP Code Security Reviewer, Resume ATS Optimizer, Programmatic SEO Architect)
   * 📊 **Streamlit v2.0 Executive Dashboard** + **Docker Compose Stack**
+  * 🛡️ **30-Day 100% Risk-Free Money-Back Guarantee**
 
 ---
 
@@ -51,7 +58,7 @@ def generate_structured_json(prompt: str, system_instruction: str) -> AIStructur
                 contents=prompt,
                 config={
                     "response_mime_type": "application/json",
-                    "system_instruction": system_instruction,
+                    "system_instruction: system_instruction,
                 },
             )
             return AIStructuredResponse(**json.loads(res.text))
