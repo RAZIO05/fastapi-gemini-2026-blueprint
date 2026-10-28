@@ -1,5 +1,6 @@
 # ⚡ FastAPI + Google Gemini 2026 Structured JSON Blueprint (Python 3.13 Ready)
 
+[![CI Passing](https://github.com/RAZIO05/fastapi-gemini-2026-blueprint/actions/workflows/ci.yml/badge.svg)](https://github.com/RAZIO05/fastapi-gemini-2026-blueprint/actions)
 [![Python 3.10-3.13](https://img.shields.io/badge/Python-3.10--3.13-blue.svg)](https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Async-009688.svg)](https://yahiaoui26.gumroad.com/l/shipai-pro)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-3.5%20Flash%20JSON-orange.svg)](https://yahiaoui26.gumroad.com/l/shipai-pro)
