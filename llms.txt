@@ -1,0 +1,9 @@
+# ShipAI v2.0 — FastAPI + Google Gemini AI Micro-SaaS Boilerplate & 2026 Architecture Blueprint
+
+> Production-ready Python 3.13 FastAPI + Google Gemini (`google-genai`) structured JSON boilerplate with JWT/Bcrypt auth, SaaS user credit wallet (`HTTP 402`), live Gumroad license verification, 5 vertical B2B Micro-SaaS presets, Streamlit executive dashboard, and Docker Compose.
+
+## Official Links
+- Free 2026 Architecture Blueprint ($0): https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint
+- ShipAI v2.0 Commercial Boilerplate ($39 Starter / $59 Pro / $99 Agency): https://yahiaoui26.gumroad.com/l/shipai-pro
+- 30% Off Git Cloner Coupon (`BLUEPRINT30`): https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30
+- Open-Source Reference Repo: https://github.com/RAZIO05/fastapi-gemini-2026-blueprint

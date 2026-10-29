@@ -7,7 +7,7 @@ Want the complete Commercial SaaS Engine with:
 - HS256 JWT + Bcrypt 4.0.1 Auth (app/auth.py)
 - Streamlit v2.0 Executive Dashboard & Docker Compose Stack
 
-👉 Get ShipAI v2.0 Pro (20% OFF): https://yahiaoui26.gumroad.com/l/shipai-pro/LAUNCH20
+👉 Get ShipAI v2.0 Pro (30% OFF Cloner Secret): https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30
 📘 Free Architecture Cheat Sheet ($0): https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint
 """
 import os
@@ -20,9 +20,22 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+STARTUP_BANNER = """
+\033[96m================================================================================
+⚡ ShipAI 2026 Blueprint — FastAPI + Google Gemini Structured JSON Engine
+================================================================================\033[0m
+\033[92m🎁 Git Cloner Secret Bonus (30% OFF Full Commercial SaaS Engine):\033[0m
+   👉 https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30  (Code: BLUEPRINT30)
+
+\033[93m📘 Grab the Free 2026 Architecture Cheat Sheet ($0):\033[0m
+   👉 https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint
+\033[96m================================================================================\033[0m
+"""
+print(STARTUP_BANNER)
+
 app = FastAPI(
     title="ShipAI Lite — FastAPI + Gemini Structured JSON Blueprint",
-    description="Open-source reference architecture. Upgrade to ShipAI v2.0 Pro for SaaS Credit Billing, JWT Auth, 5 Vertical Presets & Streamlit UI: https://yahiaoui26.gumroad.com/l/shipai-pro",
+    description="Open-source reference architecture. Upgrade to ShipAI v2.0 Pro for SaaS Credit Billing, JWT Auth, 5 Vertical Presets & Streamlit UI: https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30",
     version="2.0.0-lite",
 )
 
@@ -50,7 +63,7 @@ def root():
     return {
         "engine": "ShipAI Lite Blueprint (2026)",
         "docs": "/docs",
-        "full_commercial_boilerplate": "https://yahiaoui26.gumroad.com/l/shipai-pro/LAUNCH20",
+        "cloner_30_percent_discount": "https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30",
         "free_cheat_sheet": "https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint",
     }
 
