@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-gemini-blueprint"
+version = "2.0.0"
+description = "2026 Production Architecture Blueprint for FastAPI + Google Gemini Structured JSON (Pydantic v2, 3-Model Failover & SaaS Credit Quotas)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "ShipAI Studio", email = "shipai@users.noreply.github.com"}]
+requires-python = ">=3.10"
+keywords = ["fastapi", "gemini", "google-genai", "pydantic", "micro-saas", "boilerplate", "streamlit", "llm"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://razio05.github.io"
+Documentation = "https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint"
+CommercialBoilerplate = "https://yahiaoui26.gumroad.com/l/shipai-pro/BLUEPRINT30"
+Repository = "https://github.com/RAZIO05/fastapi-gemini-2026-blueprint"
+
+[project.scripts]
+shipai-blueprint = "fastapi_gemini_blueprint:print_blueprint_guide"
